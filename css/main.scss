@@ -1,0 +1,312 @@
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$background: #f6f6f6;
+@mixin background_btn {
+    background-image: linear-gradient(to bottom right, $secondary, $primary)
+}
+
+$box-shadow: 1px 5px 10px 2px darken($background, 20%);
+
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+@mixin cta_btn {
+    padding: 15px 25px 15px 25px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 30px;
+    border: solid 1px;
+    border-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-origin: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: $box-shadow;
+    @include background_btn;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px -20px 20px;
+
+}
+
+h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 2.5rem;
+        font-weight: 400;
+}
+
+
+h2 {
+
+    font-size: 2rem;
+    margin-left: 1.5rem;
+   
+}
+
+h3 {
+    margin-bottom: -10px;
+}
+
+p {
+    font-weight: lighter;
+}
+
+.localization {
+    border-top: solid 1px $background;
+    border-bottom: solid 1px $background;
+    padding: 0px 20px 40px 20px;
+    background-color: $background;
+    margin-bottom: 40px;
+}
+
+.tracking {
+    display: flex;
+    justify-content: center;
+    margin: 0px -20px 0px -20px;
+    /* border-top: solid 4px darken($color: $background, $amount: 15%);*/
+    box-shadow: 0px -3px 5px -1px darken($color: $background, $amount: 20%);
+    border-bottom: solid 1px darken($color: $background, $amount: 5%);
+    background: darken($background, $amount: 5%)
+}
+
+.fas.fa-map-marker-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+    color: #4b4b4b;
+}
+
+.tracking_text {
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+.explore_title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+}
+
+.explore_text {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 40px 0px 40px;
+}
+
+.explore_btn {
+    @include cta_btn()
+};
+
+.instructions_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+   }
+   
+
+.instructions_number {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    border: solid 1px $primary;
+    background-color: $primary;
+    border-radius: 30px;
+    margin: 0px 20px 0px -70px;
+    
+}
+
+
+.instructions_list_item {
+ 
+    border: solid 1px $background;
+    background-color: $background;
+    border-radius: 20px;
+    padding: 25px 80px 25px 60px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    box-shadow: $box-shadow;
+
+
+}
+
+button.instructions_list_item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+   }
+   
+
+
+
+.fas.fa-mobile-alt {
+    font-size: 1rem;
+    color: #7e7e7e;
+    margin-right: 20px;
+}
+
+.fas.fa-list-ul {
+    font-size: 1rem;
+    color: #7e7e7e;
+    margin-right: 20px;
+}
+
+.fas.fa-store {
+    font-size: 1rem;
+    color: $primary;
+    margin-right: 20px;
+}
+
+    .restaurants {
+        display: block;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        padding-top: 40px;
+        background-color: $background;
+    }
+
+    .restaurants_card_block {
+        padding: 1rem;
+        margin-top: -20px;
+        display: block;
+    
+       
+    }
+
+    .restaurant_card_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurant_card--new {
+       @include card();
+       box-shadow: $box-shadow;
+       position: relative
+    }
+
+    .restaurant_card {
+        @include card();
+        box-shadow: $box-shadow;
+    }
+ 
+
+    .restaurant_card_img {
+        height: 11rem;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+
+
+    .restaurant_card_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .col_card_info {
+        margin-left: 1rem;
+        color: black;
+    }
+
+    .col_like_icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 1rem;
+        font-size: 1.7rem;
+        color: black;
+    }
+
+    
+
+    .card_label_new {
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        background-color: $tertiary;
+        color: darken($color: $tertiary, $amount: 40%);
+        font-weight: bold;
+        font-size: 0.9rem;
+        padding: 5px 10px 10px 5px;
+        border: solid 1px $tertiary;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px;
+        position: absolute;
+        right: 10px;
+
+    }
+
+
+
+    .footer_container {
+        background-color: #312d2d;
+        color: white;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+    }
+    .footer_title_logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+   a {
+        color: white;
+        text-decoration: none;
+    } 
+
+    .footer_nav_link {
+        list-style-type: none;
+        margin: 7px;
+    }
+
+    #mentions_legales {
+        font-weight: 300;
+    }
+
+    #contact {
+        font-weight: 300;
+    }
+
+ 
