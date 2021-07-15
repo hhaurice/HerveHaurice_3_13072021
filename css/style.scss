@@ -110,25 +110,13 @@ a.previous {
     object-fit: cover;
 }
 
-
-    .footer_container {
-        background-color: #312d2d;
-        color: white;
-        padding-bottom: 1rem;
-        padding-top: 0.5rem;
-    }
-    .footer_title_logo {
-        font-family: 'Shrikhand', cursive;
-        font-size: 1.3rem;
-        font-weight: 500;
-    }
     
    a {
         color: white;
         text-decoration: none;
     } 
 
-    .menu {
+    #menu {
         background-color: $background;
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
@@ -199,17 +187,29 @@ a.previous {
             margin-top: 40px;   
     }   
 
-    .footer_nav_link {
+
+    footer{
+        background-color: #312d2d;
+        color: white;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+    }
+    footer h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+     footer ul > li{
         list-style-type: none;
         margin: 7px;
     }
 
-    #mentions_legales {
+    body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(3) {
         font-weight: 300;
-    }
-
-    #contact {
+       }
+    body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
         font-weight: 300;
-    }
-
+       }
+              
  

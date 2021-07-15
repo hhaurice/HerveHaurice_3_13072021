@@ -65,7 +65,7 @@ h3 {
 }
 
 p {
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 #localization {
@@ -307,12 +307,11 @@ button.instructions_list_item{
         margin: 7px;
     }
 
-    #mentions_legales {
+    body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(3) {
         font-weight: 300;
-    }
-
-    #contact {
+       }
+    body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
         font-weight: 300;
-    }
+       }
 
  
