@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
   margin-left: 1.5rem;
+  font-size: 26px;
 }
 
 h3 {
@@ -33,7 +33,7 @@ p {
   font-weight: lighter;
 }
 
-.localization {
+#localization {
   border-top: solid 1px #f6f6f6;
   border-bottom: solid 1px #f6f6f6;
   padding: 0px 20px 40px 20px;
@@ -80,15 +80,15 @@ p {
   border: none;
 }
 
-.explore_title {
+.explore h2 {
   margin-top: 40px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 28px;
   margin-bottom: 0px;
   margin-left: 0rem;
 }
 
-.explore_text {
+.explore p {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 0px;
@@ -197,7 +197,7 @@ button.instructions_list_item {
   margin-right: 20px;
 }
 
-.restaurants {
+#restaurants {
   display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -331,7 +331,7 @@ footer {
   padding-top: 0.5rem;
 }
 
-.footer_title_logo {
+footer h2 {
   font-family: 'Shrikhand', cursive;
   font-size: 1.3rem;
   font-weight: 500;
@@ -342,7 +342,7 @@ a {
   text-decoration: none;
 }
 
-.footer_nav_link {
+footer ul > li {
   list-style-type: none;
   margin: 7px;
 }
