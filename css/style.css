@@ -12,8 +12,9 @@ header {
 
 h1 {
   font-family: 'Shrikhand', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
+  text-align: center;
 }
 
 h2 {
@@ -88,12 +89,39 @@ a {
   text-transform: uppercase;
 }
 
+.menu_list_item_price {
+  font-weight: 400;
+}
+
 .menu_border_bottom {
   border-bottom: solid 3px #99E2D0;
   width: 40px;
   margin-left: 20px;
   margin-top: -16px;
   margin-bottom: 16px;
+}
+
+.menu_list_item_card {
+  -webkit-animation: fadeIn ease-in-out alternate 1500ms;
+          animation: fadeIn ease-in-out alternate 1500ms;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 i.far.fa-heart {
