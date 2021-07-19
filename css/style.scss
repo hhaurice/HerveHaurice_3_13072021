@@ -28,7 +28,7 @@ $box-shadow: 1px 5px 10px 2px darken($background, 20%);
         padding-left: 11px;
         padding-top: 0px;
         padding-right: 20px;
-        padding-bottom: 0px;       
+        padding-bottom: 0px;   
 }
 
 @mixin card_info {
@@ -155,6 +155,9 @@ a.previous {
         margin-bottom: 16px;
        }
 
+       .menu_list_item_card a {
+           color: black;
+       }
 
        .menu_list_item:nth-child(1) > div:nth-child(3) {
         animation: slide 800ms ease-in-out 1000ms backwards;
@@ -204,7 +207,67 @@ a.previous {
         }
     }
 
-    
+
+    // slidin effect sur les plats à droite
+
+    .menu_list_item_card {
+        position: relative;
+    }
+
+    .menu_list_item_card_overlay {
+        position: absolute;
+        background-color: #99E2D0;
+        height: 83px;
+        width: 0;
+        bottom: 0;
+        right: 0;
+        left: 100%;
+        overflow: hidden;
+        transition: .5s ease;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        top: 0;
+       }
+
+       .text {
+        color: white;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+       }
+       
+       .menu_list_item_card:hover .menu_list_item_card_overlay{
+           width: 20%;
+           left: 80%;
+       }
+
+       .menu_list_item_card:hover .menu_list_item_price {
+           transform: translate(-70px);
+           transition: .5s ease;
+       }
+
+       .menu_list_item_price {
+           width: 10%;
+       }
+
+       .menu_list_item_ingredients {
+           width: 90%;
+           white-space: nowrap;
+           position: relative;
+       }
+
+       .menu_list_item_card:hover p.menu_list_item_ingredients {
+        width: 65%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+       }
+
+       // Fin test slide in effect
+
 
 
     i.far.fa-heart {
