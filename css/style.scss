@@ -216,6 +216,8 @@ a.previous {
 
     .menu_list_item_card_overlay {
         display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         background-color: #99E2D0;
         height: 86px;
@@ -231,11 +233,9 @@ a.previous {
 
        .menu_check {
         position: absolute;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%);
         white-space: nowrap;
         font-size: 18px;
-        top: 32%;
-        left: 24%;
        }
 
        .fa-check {
@@ -263,9 +263,13 @@ a.previous {
                    transform: rotate(0deg);
                }
 
-               50% {
+               /*           
+    
+                50% {
                    transform: rotate(360deg);
                }
+
+               */
 
                100% {
                    transform: rotate(360deg);
