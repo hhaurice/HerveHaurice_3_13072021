@@ -215,38 +215,62 @@ a.previous {
     }
 
     .menu_list_item_card_overlay {
+        display: flex;
         position: absolute;
         background-color: #99E2D0;
-        height: 83px;
+        height: 86px;
         width: 0;
         bottom: 0;
         right: 0;
-        left: 100%;
         overflow: hidden;
         transition: .5s ease;
         border-top-right-radius: 24px;
         border-bottom-right-radius: 24px;
-        top: 0;
+        top: -1px;
        }
 
-       .text {
-        color: white;
-        font-size: 10px;
+       .menu_check {
         position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
+        font-size: 18px;
+        top: 32%;
+        left: 24%;
        }
+
+       .fa-check {
+        border: solid 1px white;
+        background-color: white;
+        color: #99E2D0;
+        border-radius: 30px;
+        padding: 7px;
+       }
+       
        
        .menu_list_item_card:hover .menu_list_item_card_overlay{
            width: 20%;
-           left: 80%;
        }
 
        .menu_list_item_card:hover .menu_list_item_price {
-           transform: translate(-70px);
+           transform: translate(-180%);
            transition: .5s ease;
+       }
+
+       .menu_list_item_card:hover div.menu_check {
+           animation: rotate 750ms  forwards;
+           @keyframes rotate {
+               0% {
+                   transform: rotate(0deg);
+               }
+
+               50% {
+                   transform: rotate(360deg);
+               }
+
+               100% {
+                   transform: rotate(360deg);
+               }
+           }
        }
 
        .menu_list_item_price {
