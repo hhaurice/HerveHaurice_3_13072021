@@ -35,8 +35,11 @@ $box-shadow: 1px 5px 10px 2px darken($background, 20%);
 
 body {
     font-family: 'Roboto', sans-serif;
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -68,21 +71,108 @@ p {
     font-weight: 300;
 }
 
+
+// intro test
+
+.circle {
+    display: flex;
+    align-self: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, $secondary);
+    animation: rotate 3000ms cubic-bezier(1, 0.21, 0.11, 1) infinite;
+}
+
+ @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #9356DC;
+    }  
+}
+
+
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left:6px;
+    right: 6px;
+    bottom: 6px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg, transparent, transparent 40%, $secondary);
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(20px);
+
+}
+
+
+
+
+#localization, #instructions, #restaurants, footer {
+    animation: intro 2500ms forwards ease-in;
+}
+
+@keyframes intro {
+    0% {
+        
+        opacity: 0;
+    }
+
+    70% {
+        
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+// fin test intro
+
+
 #localization {
     border-top: solid 1px $background;
     border-bottom: solid 1px $background;
-    padding: 0px 20px 40px 20px;
     background-color: $background;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: -250px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 
 .tracking {
     display: flex;
     justify-content: center;
-    margin: 0px -20px 0px -20px;
-    padding: 8px;
     padding-left: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     box-shadow: 0px -3px 5px -1px darken($color: $background, $amount: 20%);
     border-bottom: solid 1px darken($color: $background, $amount: 5%);
     background: darken($background, $amount: 5%)
@@ -94,6 +184,7 @@ p {
     justify-content: center;
     margin-right: 1rem;
     color: #4b4b4b;
+    padding-left: 50px;      
 }
 
 .tracking_text {
@@ -102,6 +193,7 @@ p {
     color: #4b4b4b;
     background-color: #E9E9E9;
     border: none;
+    padding: 12px;
 }
 
 .explore h2 {
@@ -122,14 +214,19 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 40px 0px 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .explore_btn {
     @include cta_btn()
 };
 
-
+#instructions {
+    margin-bottom: 40px;
+}
 
 .instructions_list {
     display: flex;
@@ -199,10 +296,8 @@ button.instructions_list_item{
 }
 
     #restaurants {
-        display: block;
+        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin: auto;
         padding-top: 40px;
         background-color: $background;
     }
@@ -331,6 +426,7 @@ button.instructions_list_item{
         color: white;
         padding-bottom: 1rem;
         padding-top: 0.5rem;
+        width: 100%;
     }
     
     footer h2 {
