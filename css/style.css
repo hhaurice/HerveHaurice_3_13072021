@@ -287,12 +287,76 @@ a {
 
 i.far.fa-heart {
   font-size: 1.5rem;
-  cursor: pointer;
 }
 
 i.fas.fa-heart {
-  display: none;
   font-size: 1.5rem;
+}
+
+.like_icon a {
+  color: black;
+}
+
+.far.fa-heart {
+  position: absolute;
+}
+
+.fas.fa-heart {
+  opacity: 0;
+  display: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+}
+
+.fas.fa-heart:hover {
+  -webkit-animation: like 500ms forwards ease-out;
+          animation: like 500ms forwards ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.far.fa-heart:hover {
+  -webkit-animation: disappear 400ms forwards ease-in;
+          animation: disappear 400ms forwards ease-in;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .menu_list_item_card {
@@ -357,6 +421,12 @@ i.fas.fa-heart {
   padding-right: 60px;
   margin-bottom: 60px;
   margin-top: 40px;
+}
+
+.order_btn:hover {
+  opacity: .9;
+  -webkit-box-shadow: 1px 5px 10px 2px #aaaaaa;
+          box-shadow: 1px 5px 10px 2px #aaaaaa;
 }
 
 footer {
