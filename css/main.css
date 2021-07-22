@@ -247,6 +247,12 @@ p {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
+.explore_btn:hover {
+  opacity: .9;
+  -webkit-box-shadow: 1px 5px 10px 2px #aaaaaa;
+          box-shadow: 1px 5px 10px 2px #aaaaaa;
+}
+
 #instructions {
   margin-bottom: 40px;
 }

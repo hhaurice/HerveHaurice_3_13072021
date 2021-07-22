@@ -222,7 +222,14 @@ p {
 
 .explore_btn {
     @include cta_btn()
-};
+}
+
+.explore_btn:hover {
+    opacity: .9;
+    box-shadow: 1px 5px 10px 2px darken($color: $background, $amount: 30%);
+}
+
+
 
 #instructions {
     margin-bottom: 40px;
