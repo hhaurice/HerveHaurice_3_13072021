@@ -410,5 +410,19 @@ a.previous {
     body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
         font-weight: 300;
        }
-              
+             
+       
+       @media screen and (min-width: 1160px) {
+   
+        footer {
+            display: flex;
+            justify-content: space-between;
+        }
+   
+        footer ul {
+            display: flex;
+            flex-direction: row;
+            margin-right: 30px;
+        }
+    }
  

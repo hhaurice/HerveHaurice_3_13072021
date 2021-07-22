@@ -74,7 +74,7 @@ p {
 
 // intro test
 
-.circle {
+.loader_circle {
     display: flex;
     align-self: center;
     position: relative;
@@ -99,7 +99,7 @@ p {
 
 
 
-.circle::before {
+.loader_circle::before {
     content: '';
     position: absolute;
     top: 6px;
@@ -111,7 +111,7 @@ p {
     z-index: 1000;
 }
 
-.circle::after {
+.loader_circle::after {
     content: '';
     position: absolute;
     top: 0px;
@@ -454,7 +454,7 @@ button.instructions_list_item{
         font-weight: 300;
        }
 
- @media screen and (min-width: 940px) {
+ @media screen and (min-width: 1160px) {
      #instructions {
          display: flex;
          flex-direction: column;
