@@ -337,22 +337,11 @@ button.instructions_list_item {
           flex-direction: column;
   padding-top: 40px;
   background-color: #f6f6f6;
-}
-
-.restaurants_card_block {
   padding: 1rem;
-  margin-top: -20px;
-  display: block;
 }
 
-.restaurant_card_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+#restaurants h2 {
+  margin-left: 0px;
 }
 
 .restaurant_card--new {
@@ -523,10 +512,11 @@ footer {
   width: 100%;
 }
 
-footer h2 {
+footer h3 {
   font-family: 'Shrikhand', cursive;
   font-size: 1.3rem;
   font-weight: 500;
+  margin-left: 45px;
 }
 
 a {
