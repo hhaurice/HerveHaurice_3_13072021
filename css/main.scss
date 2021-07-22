@@ -454,4 +454,35 @@ button.instructions_list_item{
         font-weight: 300;
        }
 
- 
+ @media screen and (min-width: 940px) {
+     #instructions {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .instructions_list {
+        flex-direction: row;
+     }
+
+     .restaurant_list {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+
+     .restaurant_card, .restaurant_card--new {
+         width: 25%;
+         margin: 10px;
+     }
+
+     footer {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     footer ul {
+         display: flex;
+         flex-direction: row;
+         margin-right: 30px;
+     }
+ }
