@@ -461,29 +461,6 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
 }
 
 
-/*
-@media screen and (min-width: 1160px) {
-#instructions {
-    display: flex;
-    flex-direction: column;
-}
-
-.instructions_list {
-    flex-direction: row;
-}
-
-.restaurant_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.restaurant_card, .restaurant_card--new {
-    width: 25%;
-    margin: 10px;
-    }
-} */
-
 @media screen and (min-width: 600px) {
  .instructions_list  { 
     margin-right: 100px;
