@@ -42,6 +42,14 @@ p {
   font-weight: 300;
 }
 
+.tracking_desktop_only {
+  display: none;
+}
+
+.tracking_desktop_only > input:nth-child(1) {
+  border-radius: 20px;
+}
+
 .loader_circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,7 +552,91 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
   font-weight: 300;
 }
 
+/*
 @media screen and (min-width: 1160px) {
+#instructions {
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions_list {
+    flex-direction: row;
+}
+
+.restaurant_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.restaurant_card, .restaurant_card--new {
+    width: 25%;
+    margin: 10px;
+    }
+} */
+@media screen and (min-width: 600px) {
+  .instructions_list {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .tracking {
+    display: none;
+  }
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #restaurants h2 {
+    margin-left: 8px;
+  }
+  .restaurant_list {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  #localization {
+    margin-top: -200px;
+  }
+  .tracking_desktop_only {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tracking_desktop_only > input:nth-child(2) {
+    width: 200px;
+    padding: 16px;
+    border: none;
+  }
   #instructions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -575,34 +667,6 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
   .restaurant_card, .restaurant_card--new {
     width: 25%;
     margin: 10px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .instructions_list {
-    margin-right: 100px;
-    margin-left: 100px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */

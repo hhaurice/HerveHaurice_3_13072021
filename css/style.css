@@ -450,6 +450,10 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
 }
 
 @media screen and (min-width: 768px) {
+  .menu_list_item {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -457,6 +461,9 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    font-size: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   footer ul {
     display: -webkit-box;

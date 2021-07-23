@@ -71,6 +71,15 @@ p {
     font-weight: 300;
 }
 
+.tracking_desktop_only {
+    display: none;
+}
+
+.tracking_desktop_only > input:nth-child(1) {
+    border-radius: 20px;
+   }
+   
+
 
 .loader_circle {
     display: flex;
@@ -451,6 +460,8 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     font-weight: 300;
 }
 
+
+/*
 @media screen and (min-width: 1160px) {
 #instructions {
     display: flex;
@@ -471,7 +482,7 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     width: 25%;
     margin: 10px;
     }
-}
+} */
 
 @media screen and (min-width: 600px) {
  .instructions_list  { 
@@ -484,6 +495,9 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     footer {
         display: flex;
         justify-content: space-between;
+        font-size: 15px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     
     footer ul {
@@ -491,5 +505,61 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
         flex-direction: row;
         margin-right: 30px;
     }
+    
+}
+
+@media screen and (min-width: 1260px) {
+    .tracking {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #restaurants h2 {
+        margin-left: 8px;
+      }
+
+      .restaurant_list {
+        margin-right: 30px;
+        margin-left: 30px;
+       }
+       
+
+    #localization {
+        margin-top: -200px;
+    }
+
+    .tracking_desktop_only {
+        display: flex;
+    }
+    .tracking_desktop_only > input:nth-child(2) {
+        width: 200px;
+        padding: 16px;
+        border: none;
+       }
+
+       #instructions {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .instructions_list {
+        flex-direction: row;
+    }
+    
+    .restaurant_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .restaurant_card, .restaurant_card--new {
+        width: 25%;
+        margin: 10px;
+        }
+       
     
 }
