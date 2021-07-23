@@ -251,8 +251,8 @@ p {
     border: solid 1px $primary;
     background-color: $primary;
     border-radius: 30px;
-    margin: 0px 20px 0px -70px;
-    
+    position: absolute;
+    left: -10px;    
 }
 
 
@@ -261,12 +261,12 @@ p {
     border: solid 1px $background;
     background-color: $background;
     border-radius: 20px;
-    padding: 25px 80px 25px 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     box-shadow: $box-shadow;
-
 
 }
 
@@ -274,7 +274,8 @@ button.instructions_list_item{
     width: 100%;
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    justify-content: center;
+    position: relative;
    }
    
 
@@ -469,8 +470,14 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
 .restaurant_card, .restaurant_card--new {
     width: 25%;
     margin: 10px;
+    }
 }
 
+@media screen and (min-width: 600px) {
+ .instructions_list  { 
+    margin-right: 100px;
+    margin-left: 100px;
+    }
 }
 
 @media screen and (min-width: 768px) {
