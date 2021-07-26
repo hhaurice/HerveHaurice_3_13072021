@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
   display: -webkit-box;
@@ -24,7 +25,7 @@ header {
 }
 
 h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Shrikhand', cursive, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -174,8 +175,8 @@ p {
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  -webkit-box-shadow: 0px -3px 5px -1px #c3c3c3;
-          box-shadow: 0px -3px 5px -1px #c3c3c3;
+  -webkit-box-shadow: 0px -3px 3px #c3c3c3;
+          box-shadow: 0px -3px 3px #c3c3c3;
   border-bottom: solid 1px #e9e9e9;
   background: #e9e9e9;
 }
@@ -249,8 +250,8 @@ p {
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  -webkit-box-shadow: 1px 5px 10px 2px #c3c3c3;
-          box-shadow: 1px 5px 10px 2px #c3c3c3;
+  -webkit-box-shadow: 1px 5px 10px 2px #d0d0d0;
+          box-shadow: 1px 5px 10px 2px #d0d0d0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
@@ -306,8 +307,8 @@ p {
   margin: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
-  -webkit-box-shadow: 1px 5px 10px 2px #c3c3c3;
-          box-shadow: 1px 5px 10px 2px #c3c3c3;
+  -webkit-box-shadow: 1px 5px 10px 2px #d0d0d0;
+          box-shadow: 1px 5px 10px 2px #d0d0d0;
 }
 
 button.instructions_list_item {
@@ -367,11 +368,10 @@ button.instructions_list_item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: solid 1px black;
   border-radius: 20px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 1px 5px 10px 2px #c3c3c3;
-          box-shadow: 1px 5px 10px 2px #c3c3c3;
+  -webkit-box-shadow: 1px 5px 10px 2px #d0d0d0;
+          box-shadow: 1px 5px 10px 2px #d0d0d0;
   position: relative;
 }
 
@@ -383,11 +383,10 @@ button.instructions_list_item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: solid 1px black;
   border-radius: 20px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 1px 5px 10px 2px #c3c3c3;
-          box-shadow: 1px 5px 10px 2px #c3c3c3;
+  -webkit-box-shadow: 1px 5px 10px 2px #d0d0d0;
+          box-shadow: 1px 5px 10px 2px #d0d0d0;
 }
 
 .restaurant_card_img {
@@ -420,6 +419,11 @@ button.instructions_list_item {
   color: black;
 }
 
+div.col_card_info > p {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
 .col_like_icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,14 +451,15 @@ button.instructions_list_item {
   background-color: #99E2D0;
   color: #278870;
   font-weight: bold;
-  font-size: 0.9rem;
-  padding: 5px 10px 10px 5px;
+  font-size: 1rem;
   border: solid 1px #99E2D0;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 10px;
           box-shadow: 2px 2px 10px;
   position: absolute;
-  right: 10px;
+  right: 15px;
+  padding: 8px 0px 8px 0px;
+  top: 6px;
 }
 
 .far.fa-heart {

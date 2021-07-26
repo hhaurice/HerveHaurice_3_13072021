@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -7,12 +9,11 @@ $background: #f6f6f6;
     background-image: linear-gradient(to bottom right, $secondary, $primary)
 }
 
-$box-shadow: 1px 5px 10px 2px darken($background, 20%);
+$box-shadow: 1px 5px 10px 2px darken($background, 15%);
 
 @mixin card {
     display: flex;
     flex-direction: column;
-    border: solid 1px black;
     border-radius: 20px;
     margin-bottom: 25px;
 }
@@ -50,7 +51,7 @@ header {
 }
 
 h1 {
-        font-family: 'Shrikhand', cursive;
+        font-family: 'Shrikhand', cursive, sans-serif;
         font-size: 2.5rem;
         font-weight: 400;
 }
@@ -177,7 +178,7 @@ p {
     margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    box-shadow: 0px -3px 5px -1px darken($color: $background, $amount: 20%);
+    box-shadow: 0px -3px 3px darken($color: $background, $amount: 20%);
     border-bottom: solid 1px darken($color: $background, $amount: 5%);
     background: darken($background, $amount: 5%)
 }
@@ -225,7 +226,8 @@ p {
 }
 
 .explore_btn {
-    @include cta_btn()
+    @include cta_btn();
+    
 }
 
 .explore_btn:hover {
@@ -327,6 +329,8 @@ box-shadow: $box-shadow;
 position: relative
 }
 
+
+
 .restaurant_card {
     @include card();
     box-shadow: $box-shadow;
@@ -357,6 +361,11 @@ position: relative
     color: black;
 }
 
+div.col_card_info > p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
 .col_like_icon {
     display: flex;
     flex-direction: column;
@@ -375,13 +384,14 @@ position: relative
     background-color: $tertiary;
     color: darken($color: $tertiary, $amount: 40%);
     font-weight: bold;
-    font-size: 0.9rem;
-    padding: 5px 10px 10px 5px;
+    font-size: 1rem;
     border: solid 1px $tertiary;
     border-radius: 5px;
     box-shadow: 2px 2px 10px;
     position: absolute;
-    right: 10px;
+    right: 15px;
+    padding: 8px 0px 8px 0px;
+    top: 6px;
 
 }
 
