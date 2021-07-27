@@ -472,10 +472,15 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
 
 
 @media screen and (min-width: 600px) {
- .instructions_list  { 
-    margin-right: 100px;
-    margin-left: 100px;
-    }
+    .instructions_list  { 
+        margin-right: 60px;
+        margin-left: 60px;
+        }
+
+    .restaurant_list {
+        margin-right: 60px;
+        margin-left: 60px;
+        }
 }
 
 @media screen and (min-width: 768px) {
