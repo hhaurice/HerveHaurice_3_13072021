@@ -137,7 +137,7 @@ p {
 
 
 
-#localization, #instructions, #restaurants, footer {
+.tracking, .explore, .instructions, article, footer {
     animation: intro 2500ms forwards ease-in;
 }
 
@@ -158,24 +158,13 @@ p {
 }
 
 
-#localization {
-    border-top: solid 1px $background;
-    border-bottom: solid 1px $background;
-    background-color: $background;
-    margin-bottom: 20px;
-    margin-top: -250px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-}
-
-
 .tracking {
     display: flex;
     justify-content: center;
     padding-left: 50px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: -250px;
     padding-left: 0px;
     padding-right: 0px;
     box-shadow: 0px -3px 3px darken($color: $background, $amount: 20%);
@@ -206,7 +195,7 @@ p {
     text-align: center;
     font-size: 28px;
     margin-bottom: 0px;
-    margin-left: 0rem;
+    margin-left: 0px;
 }
 
 .explore p {
@@ -223,6 +212,9 @@ p {
     margin-right: 0px;
     padding-left: 14px;
     padding-right: 14px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: $background;
 }
 
 .explore_btn {
@@ -237,12 +229,12 @@ p {
 }
 
 
-
-#instructions {
+.instructions {
     margin-bottom: 40px;
 }
 
 .instructions_list {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,7 +260,11 @@ p {
 
 
 .instructions_list_item {
- 
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
     border: solid 1px $background;
     background-color: $background;
     border-radius: 20px;
@@ -278,18 +274,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     box-shadow: $box-shadow;
-
 }
-
-button.instructions_list_item{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-   }
-   
-
 
 
 .fas.fa-mobile-alt {
@@ -310,7 +295,7 @@ button.instructions_list_item{
     margin-right: 20px;
 }
 
-#restaurants {
+article {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -319,21 +304,18 @@ button.instructions_list_item{
 
 }
 
-#restaurants h2 {
+.restaurant_list {
+    padding-left: 0px;
+}
+
+article h2 {
     margin-left: 0px;
 }
-
-.restaurant_card--new {
-@include card();
-box-shadow: $box-shadow;
-position: relative
-}
-
-
 
 .restaurant_card {
     @include card();
     box-shadow: $box-shadow;
+    position: relative
 }
 
 
@@ -510,20 +492,21 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
         align-items: center;
     }
 
-    #restaurants h2 {
+    article h2 {
         margin-left: 8px;
+      }
+
+      .explore {
+        margin-top: -230px;
+        margin-bottom: 20px;
       }
 
       .restaurant_list {
         margin-right: 30px;
         margin-left: 30px;
+        margin-top: 0;
        }
        
-
-    #localization {
-        margin-top: -200px;
-    }
-
     .tracking_desktop_only {
         display: flex;
     }
@@ -533,7 +516,7 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
         border: none;
        }
 
-       #instructions {
+       .instructions {
         display: flex;
         flex-direction: column;
     }
