@@ -53,6 +53,66 @@ $box-shadow: 1px 5px 10px 2px darken($background, 15%);
     @include background_btn;
 }
 
+@keyframes slide {
+    0% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes like {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+} 
+
+@keyframes img_desktop {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes order {
+    0% {
+        transform: scale(0);
+    }
+  
+      100% {
+        transform: scale(1);
+    }
+} 
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -204,18 +264,6 @@ a {
     animation: slide 800ms ease-in-out 1200ms backwards;
     }
 
-    @keyframes slide {
-    0% {
-        margin-top: 30px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
 
 .menu_list_item_card {
     position: relative;
@@ -265,15 +313,6 @@ a {
 
     .menu_list_item_card:hover div.menu_check {
         animation: rotate 750ms  forwards;
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
     }
 
     .menu_list_item_price {
@@ -326,27 +365,10 @@ i.fas.fa-heart {
 .fas.fa-heart:hover {
     animation: like 500ms forwards ease-out;
     display: flex;
-    @keyframes like {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
 }
 
 .far.fa-heart:hover {
-    animation: disappear 400ms forwards ease-in;
-    @keyframes disappear {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }   
+    animation: disappear 400ms forwards ease-in;  
 } 
 
 
@@ -442,30 +464,10 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     animation: img_desktop 3000ms ease-out forwards;
   }
 
-  @keyframes img_desktop {
-      0% {
-          opacity: 1;
-      }
-
-      100% {
-          opacity: 0.6;
-      }
-  }
-
   
   .order_btn {
       animation: order 800ms 1000ms ease-in-out backwards;
   }
-
-  @keyframes order {
-      0% {
-          transform: scale(0);
-      }
-    
-        100% {
-          transform: scale(1);
-      }
-  } 
 
 #menu {
     display: flex;

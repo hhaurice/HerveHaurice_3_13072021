@@ -33,6 +33,51 @@ $box-shadow: 1px 5px 10px 2px darken($background, 15%);
     @include background_btn;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #9356DC;
+    }  
+}
+
+@keyframes intro {
+    0% {
+        
+        opacity: 0;
+    }
+
+    70% {
+        
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes like {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}  
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -94,18 +139,6 @@ p {
     animation: rotate 3000ms cubic-bezier(1, 0.21, 0.11, 1) infinite;
 }
 
- @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-        background: #9356DC;
-    }  
-}
-
-
 
 .loader_circle::before {
     content: '';
@@ -135,26 +168,8 @@ p {
 }
 
 
-
-
 .tracking, .explore, .instructions, article, footer {
     animation: intro 2500ms forwards ease-in;
-}
-
-@keyframes intro {
-    0% {
-        
-        opacity: 0;
-    }
-
-    70% {
-        
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 
@@ -394,27 +409,10 @@ div.col_card_info > p {
 .fas.fa-heart:hover {
     animation: like 500ms forwards ease-out;
     display: flex;
-    @keyframes like {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
 }
 
 .far.fa-heart:hover {
-    animation: disappear 400ms forwards ease-in;
-    @keyframes disappear {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }   
+    animation: disappear 400ms forwards ease-in; 
 } 
 
 
