@@ -556,14 +556,8 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     margin-left: 100px;
     margin-right: 100px;
   }
-  .menu_list_item:nth-child(2) {
-    width: 25%;
-  }
-  .menu_list_item:nth-child(3) {
-    width: 25%;
-  }
-  .menu_list_item:nth-child(4) {
-    width: 25%;
+  .menu_component {
+    width: 33%;
   }
   .order_container {
     width: 100%;
