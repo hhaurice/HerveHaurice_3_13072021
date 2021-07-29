@@ -195,18 +195,21 @@ a {
     margin-bottom: -30px;
     }
 
-    .menu_list_item {
+    article h3 {
+        margin-left: 20px;
+        margin-bottom: 0px;
         margin-top: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 16px;
+        }
+    
+
+    .menu_list_item {
         list-style-type: none;
         padding-left: 0;
     }
 
-    .menu_list_item h3 {
-    margin-left: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 16px;
-    }
 
     .menu_list_item_price {
         font-weight: 400;
@@ -216,51 +219,50 @@ a {
     border-bottom: solid 3px $tertiary;
     width: 40px;
     margin-left: 20px;
-    margin-top: -16px;
-    margin-bottom: 16px;
+    margin-top: 4px;
     }
 
     .menu_list_item_card a {
         color: black;
     }
 
-    .menu_list_item:nth-child(2) > li:nth-child(3) {
+    .menu_list_item_card:nth-child(1) {
     animation: slide 800ms ease-in-out 1000ms backwards;
     }
 
-    .menu_list_item:nth-child(2) > li:nth-child(4) {
+    .menu_list_item_card:nth-child(2) {
     animation: slide 800ms ease-in-out 1100ms backwards;
     }
 
-    .menu_list_item:nth-child(2) > li:nth-child(5) {
+    .menu_list_item_card:nth-child(3)  {
     animation: slide 800ms ease-in-out 1200ms backwards;
     }
 
-    .menu_list_item:nth-child(2) > li:nth-child(6) {
+    .menu_list_item_card:nth-child(4)  {
         animation: slide 800ms ease-in-out 1200ms backwards;
         }
 
-    .menu_list_item:nth-child(3) > li:nth-child(3) {
+    .menu_list_item_card:nth-child(5)  {
     animation: slide 800ms ease-in-out 1000ms backwards;
     }
 
-    .menu_list_item:nth-child(3) > li:nth-child(4) {
+    .menu_list_item_card:nth-child(6)  {
     animation: slide 800ms ease-in-out 1100ms backwards;
     }
 
-    .menu_list_item:nth-child(3) > li:nth-child(5) {
+    .menu_list_item_card:nth-child(7)  {
     animation: slide 800ms ease-in-out 1200ms backwards;
     }
 
-    .menu_list_item:nth-child(4) > li:nth-child(3) {
+    .menu_list_item_card:nth-child(8)  {
     animation: slide 800ms ease-in-out 1000ms backwards;
     }
 
-    .menu_list_item:nth-child(4) > li:nth-child(4) {
+    .menu_list_item_card:nth-child(9)  {
     animation: slide 800ms ease-in-out 1100ms backwards;
     }
 
-    .menu_list_item:nth-child(4) > li:nth-child(5) {
+    .menu_list_item_card:nth-child(10)  {
     animation: slide 800ms ease-in-out 1200ms backwards;
     }
 

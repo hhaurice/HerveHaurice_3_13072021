@@ -1,4 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@-webkit-keyframes slide {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes img_desktop {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes img_desktop {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@-webkit-keyframes order {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes order {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   display: block;
@@ -81,17 +200,18 @@ a {
   margin-bottom: -30px;
 }
 
-.menu_list_item {
-  margin-top: 40px;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.menu_list_item h3 {
+article h3 {
   margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 40px;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+.menu_list_item {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .menu_list_item_price {
@@ -102,84 +222,61 @@ a {
   border-bottom: solid 3px #99E2D0;
   width: 40px;
   margin-left: 20px;
-  margin-top: -16px;
-  margin-bottom: 16px;
+  margin-top: 4px;
 }
 
 .menu_list_item_card a {
   color: black;
 }
 
-.menu_list_item:nth-child(2) > li:nth-child(3) {
+.menu_list_item_card:nth-child(1) {
   -webkit-animation: slide 800ms ease-in-out 1000ms backwards;
           animation: slide 800ms ease-in-out 1000ms backwards;
 }
 
-.menu_list_item:nth-child(2) > li:nth-child(4) {
+.menu_list_item_card:nth-child(2) {
   -webkit-animation: slide 800ms ease-in-out 1100ms backwards;
           animation: slide 800ms ease-in-out 1100ms backwards;
 }
 
-.menu_list_item:nth-child(2) > li:nth-child(5) {
+.menu_list_item_card:nth-child(3) {
   -webkit-animation: slide 800ms ease-in-out 1200ms backwards;
           animation: slide 800ms ease-in-out 1200ms backwards;
 }
 
-.menu_list_item:nth-child(2) > li:nth-child(6) {
+.menu_list_item_card:nth-child(4) {
   -webkit-animation: slide 800ms ease-in-out 1200ms backwards;
           animation: slide 800ms ease-in-out 1200ms backwards;
 }
 
-.menu_list_item:nth-child(3) > li:nth-child(3) {
+.menu_list_item_card:nth-child(5) {
   -webkit-animation: slide 800ms ease-in-out 1000ms backwards;
           animation: slide 800ms ease-in-out 1000ms backwards;
 }
 
-.menu_list_item:nth-child(3) > li:nth-child(4) {
+.menu_list_item_card:nth-child(6) {
   -webkit-animation: slide 800ms ease-in-out 1100ms backwards;
           animation: slide 800ms ease-in-out 1100ms backwards;
 }
 
-.menu_list_item:nth-child(3) > li:nth-child(5) {
+.menu_list_item_card:nth-child(7) {
   -webkit-animation: slide 800ms ease-in-out 1200ms backwards;
           animation: slide 800ms ease-in-out 1200ms backwards;
 }
 
-.menu_list_item:nth-child(4) > li:nth-child(3) {
+.menu_list_item_card:nth-child(8) {
   -webkit-animation: slide 800ms ease-in-out 1000ms backwards;
           animation: slide 800ms ease-in-out 1000ms backwards;
 }
 
-.menu_list_item:nth-child(4) > li:nth-child(4) {
+.menu_list_item_card:nth-child(9) {
   -webkit-animation: slide 800ms ease-in-out 1100ms backwards;
           animation: slide 800ms ease-in-out 1100ms backwards;
 }
 
-.menu_list_item:nth-child(4) > li:nth-child(5) {
+.menu_list_item_card:nth-child(10) {
   -webkit-animation: slide 800ms ease-in-out 1200ms backwards;
           animation: slide 800ms ease-in-out 1200ms backwards;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    margin-top: 30px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes slide {
-  0% {
-    margin-top: 30px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0px;
-    opacity: 1;
-  }
 }
 
 .menu_list_item_card {
@@ -242,28 +339,6 @@ a {
           animation: rotate 750ms  forwards;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 .menu_list_item_price {
   width: 10%;
 }
@@ -317,45 +392,9 @@ i.fas.fa-heart {
   display: flex;
 }
 
-@-webkit-keyframes like {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes like {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .far.fa-heart:hover {
   -webkit-animation: disappear 400ms forwards ease-in;
           animation: disappear 400ms forwards ease-in;
-}
-
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .menu_list_item_card {
@@ -495,45 +534,9 @@ body > footer:nth-child(4) > ul:nth-child(2) > li:nth-child(4) {
     -webkit-animation: img_desktop 3000ms ease-out forwards;
             animation: img_desktop 3000ms ease-out forwards;
   }
-  @-webkit-keyframes img_desktop {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
-  @keyframes img_desktop {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
   .order_btn {
     -webkit-animation: order 800ms 1000ms ease-in-out backwards;
             animation: order 800ms 1000ms ease-in-out backwards;
-  }
-  @-webkit-keyframes order {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes order {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
   }
   #menu {
     display: -webkit-box;
