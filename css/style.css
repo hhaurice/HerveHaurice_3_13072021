@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @-webkit-keyframes slide {
   0% {
     margin-top: 30px;
@@ -8,7 +9,6 @@
     opacity: 1;
   }
 }
-
 @keyframes slide {
   0% {
     margin-top: 30px;
